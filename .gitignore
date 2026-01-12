@@ -23,5 +23,12 @@
 hs_err_pid*
 replay_pid*
 
-# IDE's
+# Environment
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
 .zed/
+
