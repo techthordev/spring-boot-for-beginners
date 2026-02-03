@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>
+  @if (data.id) { Edit Employee } @else { Add Employee }
+</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" class="employee-form">
+    
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" placeholder="Ex. Jane">
+      @if (form.get('firstName')?.hasError('required') && form.get('firstName')?.touched) {
+        <mat-error>First name is required</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" placeholder="Ex. Doe">
+      @if (form.get('lastName')?.hasError('required') && form.get('lastName')?.touched) {
+        <mat-error>Last name is required</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" placeholder="jane.doe@example.com">
+      
+      @if (form.get('email')?.hasError('required') && form.get('email')?.touched) {
+        <mat-error>Email is required</mat-error>
+      }
+      @if (form.get('email')?.hasError('email') && form.get('email')?.touched) {
+        <mat-error>Please enter a valid email address</mat-error>
+      }
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()" [disabled]="form.invalid">
+    Save
+  </button>
+</mat-dialog-actions>
