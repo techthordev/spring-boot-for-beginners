@@ -26,7 +26,13 @@
         <module>02-spring-boot-spring-core/07-bean-scopes</module>
         <module>02-spring-boot-spring-core/08-bean-lifecycle-methods</module>
         <module>02-spring-boot-spring-core/09-java-config-bean</module>
+
         <module>03-spring-boot-hibernate-jpa-crud/01-cruddemo-student</module>
+
+        <module>04-spring-boot-rest-crud/01-spring-boot-rest-crud</module>
+        <module>04-spring-boot-rest-crud/02-spring-boot-rest-crud-employee</module>
+        <module>04-spring-boot-rest-crud/03-spring-boot-rest-crud-employee-with-spring-data-jpa</module>
+        <module>04-spring-boot-rest-crud/04-spring-boot-rest-crud-employee-with-spring-data-rest</module>
     </modules>
 
     <properties>
