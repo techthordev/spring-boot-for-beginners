@@ -33,6 +33,8 @@
         <module>04-spring-boot-rest-crud/02-spring-boot-rest-crud-employee</module>
         <module>04-spring-boot-rest-crud/03-spring-boot-rest-crud-employee-with-spring-data-jpa</module>
         <module>04-spring-boot-rest-crud/04-spring-boot-rest-crud-employee-with-spring-data-rest</module>
+
+        <module>05-spring-boot-rest-security/00-spring-boot-rest-security-employee-starter-code</module>
     </modules>
 
     <properties>
